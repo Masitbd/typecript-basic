@@ -1,0 +1,1 @@
+const names=['abul', 'babul', 'kabul']
