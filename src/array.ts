@@ -1,1 +1,1 @@
-const names=['abul', 'babul', 'kabul']
+const names:(string|number)[]=['abul', 'babul', 'kabul', 12, 100]

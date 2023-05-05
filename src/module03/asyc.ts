@@ -8,10 +8,16 @@ interface ITodo{
   completed: boolean
 }
 
-function getToDo = async()=>{
+const getToDo = async():Promise<ITodo>=>{
  const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')   
  return await response.json()
 }
+
+const getToDoData = async ():Promise<void>=>{
+    const result = await getToDo()
+    console.log(result)
+}
+
 
 const makePromise=():Promise<string>=>{
  return  new Promise<string>((resolve, reject)=>{
