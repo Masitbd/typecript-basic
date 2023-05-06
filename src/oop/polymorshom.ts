@@ -24,3 +24,8 @@ function getNap(param:Person){
 const person1= new Person()
 const person2= new Student1()
 const person3= new Developer()
+
+
+getNap(person1)
+getNap(person2)
+getNap(person3)
