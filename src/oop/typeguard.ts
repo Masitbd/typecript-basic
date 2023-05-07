@@ -54,7 +54,7 @@ class Animal1{
 }
 
 class Dog extends Animal1{
-    constructor(name:string; species:string){
+    constructor(name:string, species:string){
         super(name, species)
     }
 
@@ -73,4 +73,10 @@ class Cat extends Animal1{
         console.log('I am making sound meau');
         
     }
+}
+
+const animalInstance = new Dog('german', 'shefard')
+
+function isCat(animal: Animal1): animal is Cat{
+    return animal instanceof Cat;
 }
